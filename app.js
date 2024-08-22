@@ -82,6 +82,14 @@ var Citta = /** @class */ (function () {
     return Citta;
 }());
 document.addEventListener('DOMContentLoaded', function () {
+    var sezioneMilano = document.getElementById('sezioneMilano');
+    if (sezioneMilano) {
+        // Ora puoi accedere a sezioneMilano.style senza preoccuparti di null
+        sezioneMilano.style.backgroundColor = 'none';
+    }
+    else {
+        console.error('Elemento con ID "sezioneMilano" non trovato.');
+    }
     var milano = new Citta("Milano");
     var roma = new Citta("Roma");
     // Aggiunta dei mezzi

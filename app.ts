@@ -122,6 +122,15 @@ class Citta implements ICitta {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    const sezioneMilano = document.getElementById('sezioneMilano');
+    if (sezioneMilano) {
+        // Ora puoi accedere a sezioneMilano.style senza preoccuparti di null
+        sezioneMilano.style.backgroundColor = 'none';
+    } else {
+        console.error('Elemento con ID "sezioneMilano" non trovato.');
+    }
+
     const milano = new Citta("Milano");
     const roma = new Citta("Roma");
 

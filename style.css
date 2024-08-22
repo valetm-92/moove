@@ -1,30 +1,42 @@
-/* Stile di base per l'interfaccia utente di Moove */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
     padding: 20px;
 }
 
-h1 {
-    color: #0056b3;
-    text-align: center;
+.logo {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
     margin-bottom: 20px;
 }
 
 h2 {
     color: #333;
-    border-bottom: 2px solid #0056b3;
+    border-bottom: 2px solid #3e7422;
     padding-bottom: 5px;
+}
+
+.form-section {
+    box-sizing: border-box;
+    width: 650px;
 }
 
 .form-section, .list-section {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 15px;
+    padding: 35px;
+    margin: auto;
     margin-bottom: 20px;
+}
+
+.list-section {
+    box-sizing: border-box;
+    width: 650px; 
 }
 
 input[type="text"] {
@@ -38,7 +50,7 @@ input[type="text"] {
 
 button {
     padding: 10px 15px;
-    background-color: #0056b3;
+    background-color: #3e7422;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -47,7 +59,7 @@ button {
 }
 
 button:hover {
-    background-color: #004494;
+    background-color: #3e7422;
 }
 
 #listaMezzi {
@@ -95,4 +107,13 @@ select {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    .form-section, .list-section {
+        width: 90%;
+        max-width: none;
+        margin-bottom: 20px;
+        font-size: small;
+    }
 }
