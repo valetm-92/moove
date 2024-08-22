@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moove</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h1>Moove</h1>
+
+    <div class="form-section">
+        <h2>Scegli la città</h2>
+        <select id="selezionaCitta">
+            <option value="milano">Milano</option>
+            <option value="roma">Roma</option>
+        </select>
+        
+        <h2>Aggiungi un mezzo alla città</h2>
+        <label for="tipoMezzo">Tipo Mezzo:</label>
+        <select id="tipoMezzo">
+            <option value="bici">Bici</option>
+            <option value="scooter">Scooter</option>
+            <option value="monopattino elettrico">Monopattino Elettrico</option>
+        </select>
+
+        <br><label for="idMezzo">ID Mezzo:</label>
+        <input type="text" id="idMezzo">
+
+        <label for="statoMezzo">Stato Mezzo:</label>
+        <select id="statoMezzo">
+            <option value="disponibile">Disponibile</option>
+            <option value="in uso">In Uso</option>
+        </select>
+
+        <button id="aggiungiButton">Aggiungi Mezzo</button>
+    </div>
+    
+    <div class="list-section" id="sezioneMilano">
+        <h2>Lista Mezzi a Milano</h2>
+        <ul id="listaMezziMilano"></ul>
+    </div>
+    
+    <div class="list-section" id="sezioneRoma">
+        <h2>Lista Mezzi a Roma</h2>
+        <ul id="listaMezziRoma"></ul>
+    </div>    
+
+    <div class="form-section">
+        <h2>Prenota un mezzo</h2>
+        <input type="text" id="nomeUtente" placeholder="Nome Utente">
+        <input type="text" id="cognomeUtente" placeholder="Cognome Utente">
+        <input type="text" id="emailUtente" placeholder="Email Utente">
+        <input type="text" id="idMezzoPrenota" placeholder="ID del mezzo da prenotare">
+        <button id="prenotaButton">Prenota Mezzo</button>
+    </div>
+
+    <div id="popUp" class="pop-up" style="display: none;">
+        <div class="pop-up-content">
+            <p id="messaggioConferma"></p>
+            <button id="chiudiPopUp">Chiudi</button>
+        </div>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
